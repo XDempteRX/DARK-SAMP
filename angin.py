@@ -18,11 +18,11 @@ def login():
     user = raw_input('Username : ')
     pasw = raw_input('Password : ')
     if user == x and pasw == y:
-         print 'Login Sucessfully Acoount [XD-TEAM]'
+         print('Login Sucessfully Acoount [XD-TEAM]')
 	 time.sleep(3)
 	 sys.exit
     else:
-	 print 'Password Salah'
+	 print('Password Salah')
 	 login()
 	
 if _nama_ == '_main_':
