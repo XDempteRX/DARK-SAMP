@@ -10,23 +10,22 @@ import time
 import os
 
 ##===##=== LOGIN
-x = 'XD-TOOLS'
-y = 'XD-GANTENG'
+password ="XD-GANTENG"
 
-def login():
-    os.system('clear')
-    user = raw_input('Username : ')
-    pasw = raw_input('Password : ')
-    if user == x and pasw == y:
-         print('Login Sucessfully Acoount [XD-TEAM]')
-	 time.sleep(5)
-	 sys.exit
-    else:
-	 print('Password Salah')
-	 login()
-	
-if _nama_ == '_main_':
-      login()
+for i in range(3):
+	pwd = input("[▪] Enter Your Password: ")
+	j=3
+	if(pwd==password):
+		time.sleep(5)
+		print("[▪] WAITING FOR 5 SEC!!! ")
+		break
+	else:
+		time.sleep(5)
+		print("[×] Your Wrong Password!!! ")
+		continue
+time.sleep(5)
+print("{√} Sucessfully Login Account [XD-TEAM]!!!")
+time.sleep(5)
 
 ##===##=== STARTED
 ip = str(input("IP/HOST: "))
@@ -51,9 +50,9 @@ print ("""\033[31m
                                            ╚═════════════════════════════════╝
 """)
 print('\033[31m                                           ╔═════════════════════════════════╗')
-print('\033[31m                                           ║    Packets XDempteRX Otw     ║')
+print('\033[31m                                           ║    Packets XDempteRX Datang     ║')
 print('\033[31m                                           ╚═════════════════════════════════╝')
-print("\033[31m                    ADE BARANG OTW SAMPAI TU IP: %s ALAMAT PORT: %s"%(orgip,port))
+print("\033[31m                    MENGIRIM PAKET TO IP: %s MENGIRIM PAKET TO PORT: %s"%(orgip,port))
 
 class MyThread(threading.Thread):
      def run(self):
