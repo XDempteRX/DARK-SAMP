@@ -10,22 +10,23 @@ import time
 import os
 
 ##===##=== LOGIN
-password ="XS-TEAM"
+x = 'XD-TOOLS'
+y = 'XD-GANTENG'
 
-for i in range(3):
-    pwd = input("[•] Password : ")
-    j=3
-    if(pwd==password):
-        time.sleep(5)
-        print("[•] Tunggu Sebentar!!! ")
-        break
+def login():
+    os.system('clear')
+    user = raw_input('Username : ')
+    pasw = raw_input('Password : ')
+    if user == x and pasw == y:
+         print 'Login Sucessfully Acoount [XD-TEAM]'
+	 time.sleep(3)
+	 sys.exit
     else:
-        time.sleep(5)
-        print("[×] Password Salah!!! ")
-        continue
-time.sleep(5)
-print("[+] Berhasil Login Di Account [XS-TEAM]")
-time.sleep(5)
+	 print 'Password Salah'
+	 login()
+	
+if _nama_ == '_main_':
+      login()
 
 ##===##=== STARTED
 ip = str(input("IP/HOST: "))
